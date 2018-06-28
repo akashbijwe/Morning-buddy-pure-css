@@ -1,0 +1,191 @@
+body{
+  background-color: #0DAB9D;
+  font-family: 'Raleway', sans-serif;
+}
+.container{
+  height: 340px;
+  width: 220px;
+  //background-color: rgba(0,0,0,.1);
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.cap{
+  perspective: 130px;
+  z-index: 2;
+  animation: 0.6s capAnimate infinite;
+}
+@keyframes capAnimate{
+  0%{}
+  50%{ transform: rotate(6deg)}
+  75%{ transform: rotate(-6deg)}
+  100%{}
+}
+.cap .cap1, .cap .cap2{
+  height: 20px;
+  background-color: #EBEFF3;
+  width: 120px;
+  margin: 0 auto;
+  border: 5px solid #212830;
+  transform: rotateX( 30deg );
+  -webkit-transform: rotateX( 30deg );
+  -moz-transform: rotateX( 30deg );
+  -o-transform: rotateX( 30deg );
+  -ie-transform: rotateX( 30deg );
+}
+.cap .cap2{
+  width: 170px;
+  margin-top: -8px
+}
+.body-container{
+ perspective: 430px; 
+}
+.mug{
+  animation: 0.6s bodyAnimate infinite;
+  transform-origin: bottom;
+}
+.mug-body{
+  height: 200px;
+  width: 140px;
+  margin: 0 auto;
+  background-color: #FBFBFB;
+  border: 5px solid #212830;
+  margin-top: -7px;
+  transform: rotateX( -30deg );
+  -webkit-transform: rotateX( -30deg );
+  -moz-transform: rotateX( -30deg );
+  -o-transform: rotateX( -30deg );
+}
+@keyframes bodyAnimate{
+  0%{}
+  25%{ transform: rotate(8deg); margin-top: 5px; }
+  50%{}
+  75%{ transform: rotate(-8deg); margin-top: 5px; }
+  100%{}
+}
+.middle{
+  background-color: #FFD79E;
+  height: 100px;
+  margin-top: 15px;
+  border-top: 5px solid #212830; 
+  border-bottom: 5px solid #212830; 
+}
+.eye{
+  background-color: #212830;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+.eye1{
+  margin: 30px 0px 0 45px;
+}
+.eye2{
+  margin: -12px 0px 0px 80px;
+}
+.smile{
+  border: 5px solid #212830;  
+  width: 13px;
+  height: 5px;
+  border-top: 0;
+  margin: 10px auto;
+  border-radius: 0 0 20px 20px;
+  overflow: hidden;
+  position: relative;
+  animation: 0.6s smileAnimate infinite;
+}
+@keyframes smileAnimate{
+  0%{}
+  25%{ width: 17px; height: 7px; }
+  50%{}
+  75%{ width: 17px; height: 7px; }
+  100%{}  
+}
+.legs{
+  margin: 0 auto;
+  width: 133px;
+  margin-top: -25px;
+}
+.legs .leg1, .legs .leg2{
+  display: inline-block;
+}
+.legs .leg1{
+  margin: 0 5px 0 50px;
+}
+.legs .l1, .legs .l2{
+  background-color: #212830;
+  height: 25px;
+  width: 5px;
+  margin: 0 auto;
+} 
+.legs .foot{
+  height: 5px;
+  background-color: #212830;
+  width: 25px;
+}
+.leg1 .l2, .leg2 .l2{
+  margin-top: -2px;
+}
+.legs .leg1 .foot{
+  margin: -4px 0 0 -20px;
+  border-radius: 10px 0px 0px 10px;
+}
+.legs .leg2 .foot{
+  margin: -4px 0px 0 20px ;
+  border-radius: 0 10px 10px 0;
+}
+.legs .leg1 .l1{
+  animation: 0.6s l11 infinite;
+  transform-origin: top;
+}
+@keyframes l11{
+  0%{}
+  25%{ transform: rotate(15deg);}
+  50%{}
+  75%{ transform: rotate(15deg);} 
+  100%{}
+}
+
+.legs .leg1 .l2{
+  animation: 0.6s l12 infinite;
+  transform-origin: bottom;
+}
+@keyframes l12{
+  0%{}
+  25%{ transform: rotate(-15deg); }
+  50%{}
+  75%{ transform: rotate(-15deg);} 
+  100%{}
+}
+
+.legs .leg2 .l1{
+  animation: 0.6s l211 infinite;
+  transform-origin: top;
+}
+@keyframes l211{
+  0%{}
+  25%{ transform: rotate(-15deg); }
+  50%{}
+  75%{ transform: rotate(-15deg);} 
+  100%{}
+}
+
+.legs .leg2 .l2{
+  animation: 0.6s l212 infinite;
+  transform-origin: bottom;
+}
+@keyframes l212{
+  0%{}
+  25%{ transform: rotate(15deg); }
+  50%{}
+  75%{ transform: rotate(15deg);} 
+  100%{}
+}
+.text{
+  margin: 0px auto 30px auto;
+  text-align: center;
+  font-size: 25px;
+  color: #212830;
+}
